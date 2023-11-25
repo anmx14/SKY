@@ -4,7 +4,7 @@ import requests
 from discord_webhook import DiscordEmbed, DiscordWebhook
 while True:
   ID = random.randint(1, 17400000)
-  webhook = DiscordWebhook(url="https://discord.com/api/webhooks/1178103504968102029/XkBHsKNcy02YV_X3OWWRm6zonPYKbWvWQH_-jyckN3aXKk5xBQV5UbrRtJUP5bNZQTee")
+  webhook = DiscordWebhook(url="YOUR_WEBHOOK_HERE")
   r = requests.get(f"https://groups.roproxy.com/v1/groups/{ID}")
   try:
     group_data = r.json()
